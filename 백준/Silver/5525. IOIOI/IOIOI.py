@@ -7,10 +7,17 @@ M = int(input())
 S = input().rstrip()
 p = 'I' + 'OI' * N
 
-# 패턴 매칭
-count = 0
-for i in range(M - len(p) + 1):
-    if S[i:i + len(p)] == p:
-        count += 1
+start  ,p, count = 0 , 0 , 0
+
+while start < (M - 1):
+    if S[start:start + 3] == 'IOI': 
+        p += 1
+        start += 2
+        if p == N:      
+            count += 1     
+            p -= 1
+    else:
+        p = 0
+        start += 1
 
 print(count)
