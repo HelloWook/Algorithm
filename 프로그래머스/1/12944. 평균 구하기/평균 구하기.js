@@ -1,7 +1,4 @@
-function solution(x) {
-  var answer = x.reduce((acc, cuv) => acc + cuv, 0);
-
-  var q = answer / x.length;
-  return q;
+function solution(arr) {
+    var answer = 0;
+    return answer;
 }
-console.log(solution([1, 2, 3, 4]));
