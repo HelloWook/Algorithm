@@ -1,2 +1,2 @@
-# AlgorithmStudy
- 알고리즘 스터디
+# algorithm
+[![Solved.ac Profile](http://mazassumnida.wtf/api/generate_badge?boj=wookgod01)](https://solved.ac/wookgod01)
