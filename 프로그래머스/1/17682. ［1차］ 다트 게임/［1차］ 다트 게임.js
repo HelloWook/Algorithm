@@ -40,4 +40,3 @@ function solution(dartResult) {
 
   return results.reduce((acc, curr) => acc + curr, 0);
 }
-// 지피티 보고 함 미친넘 
