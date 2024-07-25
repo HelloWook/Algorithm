@@ -1,15 +1,14 @@
 function solution(numbers) {
-  let answer = new Array(numbers.length).fill(-1);
-  let stack = [];
-
+  var answer = [];
   for (let i = 0; i < numbers.length; i++) {
-    while (stack.length && numbers[stack[stack.length - 1]] < numbers[i]) {
-      answer[stack.pop()] = numbers[i];
+    let x = -1;
+    for (let j = i; j < numbers.length; j++) {
+      if (numbers[i] < numbers[j]) {
+        x = numbers[j];
+        break;
+      }
     }
-    stack.push(i);
+    answer.push(x);
   }
-
   return answer;
 }
-
-console.log(solution([9, 1, 5, 3, 6, 2]));
